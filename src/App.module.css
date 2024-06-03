@@ -1,0 +1,818 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  background-color: black;
+}
+
+.FirstBlock,
+.secondBlock,
+.thirdBlock,
+.fourthBlock,
+.fifthBlock,
+.sixthBlock {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-top: 3rem;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  height: 6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.menuButton,
+.searchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menuIcon,
+.searchIcon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menuIcon:hover,
+.searchIcon:hover {
+  transform: scale(1.2);
+}
+
+.iconsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 20rem;
+  height: auto;
+}
+.text{
+
+  font-size: 3.5rem;
+  text-align: right;
+  width: 50%;
+  margin-left: auto;
+  z-index: 3;
+  color: var(--themeColor);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 430px;
+  font-family:Arial, Helvetica, sans-serif;
+
+}.text1 {
+  font-size: 2.5rem;
+  text-align: right;
+  width: 50%;
+  margin-left: auto;
+  z-index: 3;
+  color: black;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 500px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.stripeBackground {
+  position: absolute;
+  width: 150%; 
+  height: 100px; 
+  background: linear-gradient(to right, var(--themeColor), var(--themeColor)); 
+  z-index: 0;
+  transform: rotate(175deg);
+  bottom: 0;
+  right: 10%; 
+  rotate: 120deg;
+  
+}
+
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+ 
+}
+
+
+
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.imageContainer img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+ 
+.tagline {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.textContainer {
+  position: absolute;
+  right: 15rem;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  z-index: 2;
+  font-size: 2em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+
+ 
+}
+
+.boldText {
+  font-weight: bold;
+  font-size: 2em;
+  color: var(--themeColor);
+  margin-right: 0;
+}
+
+.textContainer span {
+  color: black;
+  margin-right: 0;
+}
+
+.sequenceContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-right: 1.5rem;
+}
+
+.tagImage {
+  position: absolute;
+  opacity: 0;
+  animation: fadeSequence 5s infinite;
+  margin-right: 12.5rem;
+}
+
+.textSequence {
+  position: absolute;
+  opacity: 0;
+  animation: fadeSequence 5s infinite;
+  width: 100%;
+}
+
+.tagImage {
+  animation-delay: 5s;
+  height: 7.5rem;
+  width: 7.5rem;
+  margin-bottom: 1rem;
+  margin-right: 2.5rem;
+  margin-right: 10rem;
+}
+
+.textSequence:nth-child(2) {
+  animation-delay: 5s;
+}
+
+@keyframes fadeSequence {
+  0%, 20%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+ 
+  
+ 
+}
+
+
+
+.tagline {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: var(--themeColor);
+  font-size: 2.5em;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.thirdBlock .visionText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; 
+  font-size: 2.5em;
+  z-index: 2;
+  width: 100%; 
+}
+
+
+.text2{
+  font-size: 3.5rem;
+  text-align: left;
+  width: 100%;
+  margin-left: auto;
+  z-index: 3;
+  color: rgb(156, 151, 151);
+  font-weight: 700;
+  display: flex;
+  justify-content: start;
+  position: absolute;
+  margin-bottom: 200px;
+  margin-left: 40px;
+
+  
+  margin-top: 400px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.textContainer {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  z-index: 2;
+  font-size: 2em;
+  margin-right: 3.5rem;
+  align-items: center;
+}
+
+.boldText {
+  font-weight: bold;
+  font-size: 2em;
+  color: var(--themeColor);
+}
+
+.textContainer span {
+  color: black;
+  margin-right: 3st.5rem;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 6s ease-in-out;
+  opacity: 0;
+}
+
+.p3Image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+  
+}
+
+.active,
+.secondBlock .image,
+.thirdBlock .image,
+.fifthBlock .image {
+  opacity: 1;
+}
+
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.secondBlock .overlay,
+.fifthBlock .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+.secondBlockHeader {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  color: grey;
+  z-index: 3;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.secondBlockSubheader {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 3;
+  font-size: 4em;
+}
+
+.subheader {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 3;
+  font-size: 3em;
+}
+
+.knowMoreButton {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  font-size: 1em;
+  background: none;
+  color: grey;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knowMoreButton:hover {
+  background-color: #ddd;
+}
+
+
+.fourthBlock {
+  background-color: rgb(24, 25, 25);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.fourthBlock h1 {
+  font-size: 2.5rem; 
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.serviceList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; 
+  width: 100%;
+  margin-bottom: 40px;
+  object-fit: cover;
+}
+
+.serviceColumn {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; 
+  flex: 1; 
+  max-width: 25vw;
+  box-sizing: border-box;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  padding: 4rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  width: 10rem;
+  height: 10rem;
+  box-sizing: border-box;
+ 
+}
+
+.serviceItem:hover {
+  background: var(--themeColor);
+  color: white;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .fourthBlock h1 {
+    font-size: 2rem;
+  }
+
+  .serviceItem {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fourthBlock h1 {
+    font-size: 1.5rem;
+  }
+
+  .serviceList {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .serviceColumn {
+    max-width: 90vw; 
+  }
+
+  .serviceItem {
+    width: 50%; 
+    height: 8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fourthBlock h1 {
+    font-size: 1.2rem;
+  }
+
+  .serviceItem {
+    font-size: 0.7rem;
+  }
+}
+
+.fifthBlock {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.fifthBlock h1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  z-index: 1;
+}
+
+.fifthBlock p {
+  position: absolute;
+  bottom: 35%;
+  left: 18%;
+  transform: translateX(-50%);
+  font-size: 1em;
+  z-index: 1;
+  width: 20%;
+  max-width: 600px;
+  padding: 20px;
+  color: var(--themeColor);
+  text-align: left;
+  line-height: 2.5;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.sixthBlock {
+  text-align: center;
+  height: 100vh;
+  background-color: rgb(24, 25, 25);
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  overflow: hidden; 
+  overflow-wrap: inherit;
+  color: white;
+}
+
+.clientImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  animation: scroll 120s linear infinite;
+  width: max-content; 
+}
+
+.sixthBlock h1 {
+  text-align: top ;
+}
+
+.clientImage {
+  margin: 0 30px; 
+  height: 250px;
+  background-color: white;
+}
+
+.blank {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(to top, black 0%, rgb(112, 122, 147) 100%);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.thankYouMessage {
+  font-size: 16px;
+  color: #0f0;
+}
+
+.footerSections {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.footerSection {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 10px;
+}
+
+.footerSection h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footerSection p {
+  margin: 5px 0;
+}
+
+.footerBottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footerTop {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footerSections {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 4rem;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    width: 7.5rem;
+  }
+
+  .menuIcon,
+  .searchIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .textContainer {
+    font-size: 1.5em;
+  }
+
+  .tagline {
+    font-size: 1em;
+  }
+
+  .secondBlockHeader {
+    font-size: 1.5em;
+  }
+
+  .secondBlockSubheader {
+    font-size: 1.5em;
+  }
+
+  .knowMoreButton {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8em;
+  }
+
+  .fourthBlock h1 {
+    font-size: 2em;
+  }
+
+  .serviceItem {
+    font-size: 0.8em;
+  }
+
+  .serviceList {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 3rem;
+    padding: 0.25rem;
+  }
+
+  .logo {
+    width: 5rem;
+  }
+
+  .menuIcon,
+  .searchIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .textContainer {
+    font-size: 1em;
+  }
+
+  .tagline {
+    font-size: 0.8em;
+  }
+
+  .secondBlockHeader {
+    font-size: 1em;
+  }
+
+  .secondBlockSubheader {
+    font-size: 1.2em;
+  }
+
+  .knowMoreButton {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.6em;
+  }
+
+  .fourthBlock h1 {
+    font-size: 1.5em;
+  }
+
+  .serviceItem {
+    font-size: 0.7em;
+  }
+
+  .serviceList {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fourthBlock h1 {
+    font-size: 2em;
+  }
+
+  .serviceItem {
+    width: 7.5rem;
+    height: 7.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fourthBlock h1 {
+    font-size: 1.5em;
+  }
+
+  .serviceItem {
+    width: 5rem;
+    height: 5rem;
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,50 @@
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-top: 60px;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    height: 100px;
+    padding: 60px;
+  
+  }
+  
+  .menuButton,
+  .searchButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menuIcon,
+  .searchIcon {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menuIcon:hover,
+  .searchIcon:hover {
+    transform: scale(1.2);
+  }
+  
+  .iconsContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 400px;
+    height: auto;
+  }

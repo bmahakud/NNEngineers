@@ -1,0 +1,183 @@
+/* About.module.css */
+
+.companyProfile {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.imageSection {
+  position: relative;
+  width: 100%;
+}
+
+.fullWidthImage, .fullWidthImage1 {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.overlayText {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.overlaySubText {
+  font-size: 1.5rem;
+  margin: 10px 0 0 0;
+}
+
+.aboutSection {
+  padding: 20px;
+
+}
+
+.text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: rgb(229, 220, 220);
+}
+
+.text p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: rgb(143, 136, 136);
+}
+
+.icons {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.visionSection, .missionSection, .valuesSection {
+  margin-top: 30px;
+}
+
+.visionSection h2, .missionSection h2, .valuesSection h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.valuesSection ul {
+  list-style-type: none;
+  padding: 0;
+  color: rgb(143, 136, 136);
+}
+
+.valuesSection li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.block2 {
+  margin: 20px 0;
+}
+
+.taglineSection {
+  background: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100vh;
+  align-items: center;
+}
+
+.taglineTextContainer {
+  max-width: 800px;
+  margin-top: 250px;
+  position: relative;
+  align-items: center;
+
+}
+
+.scrollingText {
+  display: inline-block;
+  animation: scroll-left 150s linear infinite;
+  white-space: nowrap;
+  font-size: 10rem;
+  align-items: center;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .overlayText {
+    font-size: 2rem;
+  }
+
+  .overlaySubText {
+    font-size: 1rem;
+  }
+
+  .text h2 {
+    font-size: 1.5rem;
+  }
+
+  .text p {
+    font-size: 0.875rem;
+  }
+
+  .visionSection h2, .missionSection h2, .valuesSection h2 {
+    font-size: 1.25rem;
+  }
+
+  .valuesSection li {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 150%){
+  .overlayText {
+    font-size: 4.5rem;
+  }
+
+  .overlaySubText {
+    font-size: 2.25rem;
+  }
+
+  .text h2 {
+    font-size: 3rem;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+  }
+
+  .visionSection h2, .missionSection h2, .valuesSection h2 {
+    font-size: 2.25rem;
+  }
+
+  .valuesSection li {
+    font-size: 1.5rem;
+  }
+}

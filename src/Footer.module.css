@@ -1,0 +1,204 @@
+
+.footer {
+ 
+  .footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    background-color: black; 
+  }
+  
+    
+  }
+  
+  .footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+   
+  }
+  
+  .footerIcons {
+    display: flex;
+    gap: 30px;
+  
+    
+    
+  }
+
+  .footerSections{
+    padding: 40px;
+  }
+  
+  .iconButton:hover {
+    transform: scale(1.2); 
+  }
+  .iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+  }
+  
+  .emailSubscription {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .emailLabel {
+    font-size: 16px;
+    color: grey;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  
+  .emailInput {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    padding: 10px;
+    &::placeholder {
+      color: #fff;
+      font-size: 20px;
+     
+    }
+  }
+  
+  .subscribeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .blinkingArrow {
+    animation: blink 1s infinite;
+    width: 25px;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  .thankYouMessage {
+    font-size: 16px;
+    color: #0f0;
+  }
+  
+  .footerSections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footerSection {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 10px;
+    padding: 20px;
+    
+  }
+  
+  .footerSection h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:rgb(67, 66, 66);
+    text-align: left;
+  }
+  
+  .footerSection p {
+    margin: 5px 0;
+    text-align: left;
+    line-height: 2.5;
+    color: grey;
+    font-size: 1.1em;
+  }
+  
+  .footerBottom {
+    text-align: right;
+    
+   padding: 20px;
+   color: white;
+    
+  }
+  
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .thankYouMessage {
+    font-size: 16px;
+    color: #0f0;
+  }
+  
+  .footerSections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footerSection {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 10px;
+  }
+  
+  .footerSection h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footerSection p {
+    margin: 5px 0;
+  }
+  
+  .footerBottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .footerTop {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footerSections {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

@@ -1,0 +1,72 @@
+.unitBarInstDegree{
+width: 90%;
+
+border-style: solid;
+border-width: 1px;
+border-color: lightgrey;
+display: flex;
+margin-top: 20px;
+padding-left: 20px;
+padding-top:10px;
+padding-bottom:10px;
+border-radius: 10px;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.InstLogo{
+
+width: 80px;
+height: 80px;
+margin-left: 30px;
+}
+
+.InstInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 0px;
+
+}
+
+
+.InstInfo__degree{
+  color: black;
+  font-weight: bold;
+  font-size:20px;
+}
+
+.InstInfo__duration{
+ color: var(--themeColor);
+}
+
+
+.InstInfo__location{
+  color: grey;
+}
+
+
+
+.logoImage{
+
+width:60px;
+height: 60px;
+
+}
+
+
+.deleteButton{
+height: 30px;
+margin-right:10px;
+border-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+
+
+
+

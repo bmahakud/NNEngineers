@@ -1,0 +1,106 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: black;
+    
+ 
+   
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #852007;
+   
+}
+.searchcontainer {
+    display: flex;
+    align-items: center;
+    position: relative; 
+    width: 100%;
+    justify-content: center;
+    margin-top: 80px;
+   
+}
+
+
+.searchcontainer div{
+    border: 1px solid white;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.searchinput {
+    width: 100%; 
+    height: 120px;
+    padding: 10px;
+   border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+    outline: none;
+}
+
+.App{
+    background-color: black;
+   
+    height: 100vh;
+
+}
+
+.searchbutton {
+  
+  
+    padding: 10px;
+    border: none; 
+    background-color: black;
+    cursor: pointer;
+ 
+}
+.App button{
+    background: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.searchbutton img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+
+    margin-right: 40px;
+}
+
+
+.closebutton {
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 50px;
+    width: 100%;
+   
+   
+}
+.closeLink{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    color: grey;
+    border: none;
+    margin-top: 50px;
+    margin-right: 150px;
+    cursor: pointer;
+
+}

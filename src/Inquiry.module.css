@@ -1,0 +1,70 @@
+
+.enquiry {
+    padding: 20px;
+    background: black;
+    transition: background 0.5s ease;
+  }
+  
+  .enquiry h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .enquiryForm {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border:  1px solid lightgray;
+  }
+  
+  .enquiryForm label {
+    color: white;
+  }
+  
+  .enquiryForm input,
+  .enquiryForm textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .enquiryForm button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: var(--themeColor);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .enquiryForm button:hover {
+    background: #555555;
+  }
+  .thankYouNote {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .thankYouNote p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }

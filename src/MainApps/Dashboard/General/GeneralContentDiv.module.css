@@ -1,0 +1,78 @@
+
+.contentDiv{
+position: relative;
+border-style: none;
+border-width: 1px;
+border-color: cyan;
+width: 100% ;
+height: 100%;
+/*border-radius: 10px 0px 0px 0px;*/
+overflow-x: hidden;
+overflow-y: auto;
+}
+
+
+.createDocButton{
+
+margin-top:30px;
+margin-left: 30px;
+padding: 10px;
+border-radius: 5px;
+border-style: solid;
+border-color: lightgrey;
+border-width: 1px;
+width: 160px;
+cursor: pointer;
+background-color: white;
+color: var(--themeColor);
+}
+
+.documentArea{
+
+
+width:98%;
+height:90%;
+border-style: none;
+margin: auto;
+display: flex;
+border-color: red;
+}
+
+.documentNames{
+width: 200px;
+height: 100%;
+border-style: solid;
+border-color: grey;
+}
+
+.documentTextArea{
+
+width: calc( 100% - 250px );
+height: 100%;
+border-style: none;
+display: flex;
+flex-direction: column;
+}
+
+.saveButton{
+
+height: 40px;
+width: 150px;
+background-color: var(--themeColor);
+cursor:pointer;
+}
+
+
+
+
+.textAreaInput{
+width: 100%;
+height: 95%;
+padding: 20px;
+max-width: 1000px;
+font-size: 20px;
+}
+
+
+
+

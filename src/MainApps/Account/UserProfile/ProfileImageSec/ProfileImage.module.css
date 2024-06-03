@@ -1,0 +1,76 @@
+
+
+
+.profileImageDiv{
+
+ position:relative;
+ height:70%;
+ padding: 10%;
+ background-color:white;
+ display: flex;
+ flex-direction: column;
+ border-radius: var(--cardBorderRadius);
+
+}
+
+
+
+
+.userImage{
+ position: relative;
+ width: 100%;
+ aspect-ratio:1/1; 
+ border-radius: var(--cardBorderRadius);
+}
+
+.changePicButton{
+border-style: none;
+height: 40px;
+border-radius: var(--cardBorderRadius);
+}
+
+
+.changePicButton:hover{
+color: white;
+background-color:var(--themeColor);
+cursor: pointer;
+
+}
+
+
+
+
+
+
+
+.imageUpload{
+
+width: 100%;
+cursor:pointer;
+width: 200px;
+margin: auto;
+}
+.image_field{
+width:100%;
+height: 100%;
+text-decoration: none;
+}
+
+
+.submit_button{
+width: 100%;
+color: white;
+background-color:var(--themeColor);
+border-style: none;
+margin-top:20px;
+height:30px;
+border-radius: var(--cardBorderRadius);
+}
+
+.submit_button:hover{
+cursor: pointer;
+
+
+}
+
+

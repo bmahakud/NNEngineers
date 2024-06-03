@@ -1,0 +1,85 @@
+.Profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.Heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.closebutton {
+  background: transparent;
+ 
+  
+}
+
+.closeLink{
+  font-size: 15px;
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+   
+   
+  }
+.ProjectCard {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+}
+
+.ProjectImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  flex: 1;
+  margin: 10px;
+}
+
+.Description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  flex: 2;
+  margin: 10px;
+}
+
+.LeftImage {
+  flex-direction: row-reverse;
+}
+
+.RightImage {
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .ProjectCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ProjectImage, .Description {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .ProjectImage {
+    max-width: 40%;
+  }
+}

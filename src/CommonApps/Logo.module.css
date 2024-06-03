@@ -1,0 +1,25 @@
+.logoText{
+font-size: 30px;
+border-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--themeColor);
+color: white;
+position: relative;
+font-weight: 900;
+height: 40px;
+width: 40px;
+border-radius: 5px;
+} 
+
+
+.styleBar{
+width: 15px;
+height: 5px;
+background-color: var(--themeColor);
+position: absolute;
+top: 20px;
+left: 0px;
+}
+

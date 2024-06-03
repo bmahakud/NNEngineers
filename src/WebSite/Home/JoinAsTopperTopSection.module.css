@@ -1,0 +1,48 @@
+.parent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.t1 {
+  width: 60%;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagestop {
+
+  width: 100%;
+  height: 300px;
+  background-color: var(--chatCommentBkgColor);
+  display: flex;
+  align-items: center;
+}
+
+
+
+.innerDiv{
+
+width: 1200px;
+margin: auto;
+}
+
+
+
+.detailsText {
+  width: 60%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+}
