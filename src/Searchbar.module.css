@@ -72,8 +72,15 @@ body {
 .App button{
     background: transparent;
     border: none;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
+   
+    width: 100%;
+    display: flex;
+    align-items: right ;
+    justify-content: end;
+    
+   
 }
 .searchbutton img {
     width: 80px;
@@ -83,24 +90,21 @@ body {
     margin-right: 40px;
 }
 
-
-.closebutton {
-    font-size: 1rem;
-    cursor: pointer;
-    margin-right: 50px;
+.closebutton{
     width: 100%;
-   
-   
-}
-.closeLink{
-    border: 1px solid red;
-    width: 100%;
+    background-color: black;
+    padding: 10px;
     display: flex;
-    justify-content: right;
-    color: grey;
+    justify-content: end;
     border: none;
-    margin-top: 50px;
-    margin-right: 150px;
-    cursor: pointer;
+    margin-top: 100px;
+  }
 
+.closeLink{
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
 }

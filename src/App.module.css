@@ -3,7 +3,6 @@
   width: 100%;
   height: auto;
   display: grid;
-  justify-content: center;
   background-color: black;
 }
 
@@ -17,6 +16,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
+  margin: 0;
 }
 
 .header {
@@ -26,23 +26,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
   box-sizing: border-box;
   margin-top: 3rem;
   z-index: 1000;
   transition: transform 0.3s ease-in-out;
   height: 6rem;
 }
-
-
-
-
-
-
-
-
-
-
 
 .menuButton,
 .searchButton {
@@ -76,8 +65,8 @@
   width: 20rem;
   height: auto;
 }
-.text{
 
+.text {
   font-size: 3.5rem;
   text-align: right;
   width: 50%;
@@ -91,9 +80,10 @@
   top: 0;
   right: 0;
   margin-top: 430px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-}.text1 {
+.text1 {
   font-size: 2.5rem;
   text-align: right;
   width: 50%;
@@ -107,34 +97,27 @@
   top: 0;
   right: 0;
   margin-top: 500px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .stripeBackground {
   position: absolute;
-  width: 150%; 
-  height: 100px; 
-  background: linear-gradient(to right, var(--themeColor), var(--themeColor)); 
+  width: 150%;
+  height: 100px;
+  background: linear-gradient(to right, var(--themeColor), var(--themeColor));
   z-index: 0;
   transform: rotate(175deg);
   bottom: 0;
-  right: 10%; 
+  right: 10%;
   rotate: 120deg;
-  
 }
-
 
 .image {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
- 
 }
-
-
-
 
 .imageContainer {
   position: absolute;
@@ -155,7 +138,6 @@
   transition: opacity 0.5s ease-in-out;
 }
 
- 
 .tagline {
   position: absolute;
   top: 80%;
@@ -181,8 +163,6 @@
   display: flex;
   flex-direction: column;
   padding: 5rem;
-
- 
 }
 
 .boldText {
@@ -250,12 +230,7 @@
   height: 100%;
   width: 100%;
   position: relative;
- 
-  
- 
 }
-
-
 
 .tagline {
   position: absolute;
@@ -268,7 +243,6 @@
   z-index: 2;
   display: flex;
   justify-content: center;
- 
 }
 
 .thirdBlock .visionText {
@@ -277,31 +251,31 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white; 
+  color: rgb(83, 103, 158);
   font-size: 2.5em;
   z-index: 2;
-  width: 100%; 
+  width: 100%;
 }
 
-
-.text2{
+.text2 {
   font-size: 3.5rem;
   text-align: left;
   width: 100%;
   margin-left: auto;
   z-index: 3;
-  color: rgb(156, 151, 151);
-  font-weight: 700;
+  color: rgb(215, 215, 228);
+  font-weight: 500;
   display: flex;
   justify-content: start;
   position: absolute;
   margin-bottom: 200px;
   margin-left: 40px;
+  margin-top: 670px;
+  text-shadow: #8788c3;
+  font-family: Arial, Helvetica, sans-serif;
 
-  
-  margin-top: 400px;
-  font-family:Arial, Helvetica, sans-serif;
 }
+
 .textContainer {
   position: absolute;
   right: 1rem;
@@ -322,7 +296,7 @@
 
 .textContainer span {
   color: black;
-  margin-right: 3st.5rem;
+  margin-right: 3.5rem;
 }
 
 .block {
@@ -352,7 +326,6 @@
   width: 500px;
   height: 500px;
   z-index: 1;
-  
 }
 
 .active,
@@ -432,8 +405,6 @@
 .knowMoreButton:hover {
   background-color: #ddd;
 }
-
-
 .fourthBlock {
   background-color: rgb(24, 25, 25);
   color: white;
@@ -444,10 +415,14 @@
   text-align: center;
   padding: 2rem;
   box-sizing: border-box;
+  background-image: url(./dark0.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
 }
 
 .fourthBlock h1 {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -456,19 +431,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem; 
+  gap: 1rem;
   width: 100%;
   margin-bottom: 40px;
   object-fit: cover;
+  opacity: 1;
 }
 
 .serviceColumn {
-  color: gray;
+  color: rgb(168, 160, 160);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem; 
-  flex: 1; 
+  gap: 1rem;
+  flex: 1;
   max-width: 25vw;
   box-sizing: border-box;
 }
@@ -478,15 +454,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  object-fit: cover;
-  padding: 4rem;
+  padding: 10px;
   border-radius: 5px;
   text-align: center;
   font-size: 1rem;
-  width: 10rem;
-  height: 10rem;
+  
+  width: 270px;
+
   box-sizing: border-box;
- 
 }
 
 .serviceItem:hover {
@@ -495,9 +470,16 @@
 }
 
 .icon {
-  width: 2rem;
-  height: 2rem;
+  width: 6rem; 
+  height: 6rem; 
+  margin-bottom: 0.5rem;
+  
 }
+
+.serviceItem span {
+  white-space: nowrap; 
+}
+
 
 @media (max-width: 1024px) {
   .fourthBlock h1 {
@@ -521,11 +503,11 @@
   }
 
   .serviceColumn {
-    max-width: 90vw; 
+    max-width: 90vw;
   }
 
   .serviceItem {
-    width: 50%; 
+    width: 50%;
     height: 8rem;
     font-size: 0.8rem;
   }
@@ -571,248 +553,68 @@
   line-height: 2.5;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 .sixthBlock {
   text-align: center;
-  height: 100vh;
-  background-color: rgb(24, 25, 25);
+  height: 70vh;
+  background-image: url(./city.jpg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
-  align-items:center ;
-  overflow: hidden; 
+  align-items: center;
+  overflow: hidden;
+  
   overflow-wrap: inherit;
-  color: white;
+  color: rgb(130, 121, 121);
+  font-size: 2rem;
 }
 
 .clientImages {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
-  animation: scroll 120s linear infinite;
-  width: max-content; 
-}
-
-.sixthBlock h1 {
-  text-align: top ;
+  flex-wrap: nowrap;
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
 }
 
 .clientImage {
-  margin: 0 30px; 
-  height: 250px;
-  background-color: white;
+  position: ;
+  opacity: 0;
+  animation: popUp 15s forwards infinite;
+  width: 300px;
 }
 
-.blank {
-  width: 100%;
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-  background: linear-gradient(to top, black 0%, rgb(112, 122, 147) 100%);
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-body {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
+@keyframes popUp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
   }
   50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
     opacity: 0;
   }
 }
 
-.thankYouMessage {
-  font-size: 16px;
-  color: #0f0;
+.clientImage:nth-child(odd) {
+  animation-delay: calc(var(--index) * 14s);
 }
 
-.footerSections {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  flex-wrap: wrap;
+.clientImage:nth-child(even) {
+  animation-delay: calc(var(--index) * 16s);
 }
 
-.footerSection {
-  flex: 1;
-  min-width: 200px;
-  margin-right: 10px;
+.clientImage:nth-child(odd) {
+  animation-delay: calc(var(--index) * 28s);
 }
 
-.footerSection h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.footerSection p {
-  margin: 5px 0;
-}
-
-.footerBottom {
-  text-align: center;
-  margin-top: 20px;
-}
-
-@media (max-width: 768px) {
-  .footerTop {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .footerSections {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    height: 4rem;
-    padding: 0.5rem;
-  }
-
-  .logo {
-    width: 7.5rem;
-  }
-
-  .menuIcon,
-  .searchIcon {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  .textContainer {
-    font-size: 1.5em;
-  }
-
-  .tagline {
-    font-size: 1em;
-  }
-
-  .secondBlockHeader {
-    font-size: 1.5em;
-  }
-
-  .secondBlockSubheader {
-    font-size: 1.5em;
-  }
-
-  .knowMoreButton {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8em;
-  }
-
-  .fourthBlock h1 {
-    font-size: 2em;
-  }
-
-  .serviceItem {
-    font-size: 0.8em;
-  }
-
-  .serviceList {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .header {
-    height: 3rem;
-    padding: 0.25rem;
-  }
-
-  .logo {
-    width: 5rem;
-  }
-
-  .menuIcon,
-  .searchIcon {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-
-  .textContainer {
-    font-size: 1em;
-  }
-
-  .tagline {
-    font-size: 0.8em;
-  }
-
-  .secondBlockHeader {
-    font-size: 1em;
-  }
-
-  .secondBlockSubheader {
-    font-size: 1.2em;
-  }
-
-  .knowMoreButton {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.6em;
-  }
-
-  .fourthBlock h1 {
-    font-size: 1.5em;
-  }
-
-  .serviceItem {
-    font-size: 0.7em;
-  }
-
-  .serviceList {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .fourthBlock h1 {
-    font-size: 2em;
-  }
-
-  .serviceItem {
-    width: 7.5rem;
-    height: 7.5rem;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .fourthBlock h1 {
-    font-size: 1.5em;
-  }
-
-  .serviceItem {
-    width: 5rem;
-    height: 5rem;
-    font-size: 0.875rem;
-  }
+.clientImage:nth-child(even) {
+  animation-delay: calc(var(--index) * 10s);
 }

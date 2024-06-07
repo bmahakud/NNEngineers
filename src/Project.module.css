@@ -2,32 +2,59 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+ 
   font-family: Arial, sans-serif;
+  margin-top: 150px;
 }
 
 .Heading {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #333;
+  color: #d1c8c8;
   text-align: center;
 }
 
-.closebutton {
-  background: transparent;
- 
-  
+.SubHeading {
+  font-size: 1.5em;
+  margin: 20px 0;
+  color: #a9a1a1;
+  text-align: center;
 }
 
-.closeLink{
-  font-size: 15px;
-    background: transparent;
-    color: white;
-    border: none;
-    padding: 10px;
-   
-   
-  }
+.SliderContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  height: 600px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.Slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.ActiveSlide {
+  opacity: 1;
+}
+
+.SlideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.ProjectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .ProjectCard {
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -35,51 +62,51 @@
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 800px;
+  justify-content: center;
+  width: 400px; 
+  height: 400px; 
+  text-align: right; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProjectCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .ProjectImage {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 70%;
   border-radius: 5px;
-  flex: 1;
-  margin: 10px;
+  object-fit: cover;
 }
 
 .Description {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 16px;
-  color: #555;
-  flex: 2;
-  margin: 10px;
+  color: #e0d6d6;
+  text-align: center; 
 }
 
 .LeftImage {
-  flex-direction: row-reverse;
+  order: 1;
 }
 
 .RightImage {
-  flex-direction: row;
+  order: 1;
 }
 
 @media (max-width: 768px) {
   .ProjectCard {
-    flex-direction: column;
+    width: 100%;
+    height: auto;
     text-align: center;
   }
 
   .ProjectImage, .Description {
     max-width: 100%;
     margin: 0;
-  }
-}
-
-@media (min-width: 769px) {
-  .ProjectImage {
-    max-width: 40%;
   }
 }

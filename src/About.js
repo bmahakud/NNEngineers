@@ -1,7 +1,8 @@
 import React from 'react';
 import classes from './About.module.css';
 import Footer from './Footer';
-import s1 from './NN.jpg';
+import s1 from './NN.png';
+import s2 from './dusk.jpg';
 import logo from "./logo.png";
 import pic from './p.jpg';
 import p3 from './vision.png';
@@ -27,7 +28,6 @@ const CompanyProfile = () => {
                 <img src={pic} alt="Company Image" className={classes.fullWidthImage} />
                 <div className={classes.overlay}>
                     <h1 className={classes.overlayText}>ABOUT US</h1>
-                    <p className={classes.overlaySubText}>Overview</p>
                 </div>
             </div>
             <div className={classes.aboutSection}>
@@ -60,18 +60,18 @@ const CompanyProfile = () => {
                     </div>
                 </div>
             </div>
-            <div className={classes.block2}>
+            <div className={classes.block4}>
+                <div className={classes.overlayText}>
+                    NN Engineers Innovation and Excellence in PEB Industry
+                </div>
+            </div>
+            {/* <div className={classes.block2}> 
                 <div className={classes.imageSection}>
                     <img src={s1} alt="NN Engineers Project" className={classes.fullWidthImage1} />
                 </div>
             </div>
-            <div className={classes.taglineSection}>
-                <div className={classes.taglineTextContainer}>
-                    <div className={classes.scrollingText}>
-                        {taglines.join(' - ')}
-                    </div>
-                </div>
-            </div>
+         */}
+        
             <Footer /> 
         </div>
     );
