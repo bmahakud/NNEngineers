@@ -29,11 +29,11 @@ SECRET_KEY = 'django-insecure-uczo%0a!buj4$0n(6@3tyd#3!5@vkwcwc*0rlw6(urb0j4f@aj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.diracai.com','139.59.77.118','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['.nnengineers.co.in','139.59.77.118','localhost','127.0.0.1']
 
 
 #BASE_URL = "http://127.0.0.1:8000"# development
-BASE_URL ="https://diracai.com" #production
+BASE_URL ="https://nnengineers.co.in" #production
 #BASE_URL ="https://app.diracai.com"  #production
 
 #The above lines needs to be changed accordingly in production and developmentenvironment
@@ -180,7 +180,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-ALWAYS_UPLOAD_FILES_TO_AWS=False
+ALWAYS_UPLOAD_FILES_TO_AWS=True
 
 #This means you are uploding to AWS even when running locally
 
