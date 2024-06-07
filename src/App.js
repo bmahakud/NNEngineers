@@ -46,7 +46,7 @@ import a18 from './Sri.png';
 import a19 from './vedant.png';
 
 const App = () => {
-  const images = [image1, image2, image3, image4, image6];
+  const images = [image2, image1, image3, image4, image6];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const navigate = useNavigate();
