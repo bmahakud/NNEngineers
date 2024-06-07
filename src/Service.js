@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// ServicesPage.js
+import React from 'react';
 import classes from './service.module.css';
 import Header from './header'; 
 import Footers from './Footer';
@@ -27,14 +28,12 @@ import s3 from './ppl2.jpg';
 import s4 from './ppl3.jpg';
 
 function ServicesPage() {
-  
-
   return (
     <div className={classes.container}>
       <Header /> 
       <div className={classes.hero}>
         <img src={p1} className={classes.heroImage} alt="Hero" />
-        <div className={classes.heroText}> Our services</div>
+        <div className={classes.heroText}>Our services</div>
       </div>
       
       <div className={classes.services}>
@@ -88,41 +87,36 @@ function ServicesPage() {
             <img src={p15} alt="Storage Solutions" className={classes.serviceIcon} />
             <p>Storage Solutions</p>
           </div>
-          {/*  
-          <div className={classes.serviceItem}>
-            <img src={p9} alt="Technical Advisory Service" className={classes.serviceIcon} />
-            <p>Technical Advisory Service</p>
-          </div>
-*/}
         </div>
       </div>
-      <div className={classes.testimonials}>
-  <h2>Testimonials</h2>
-  <div className={classes.testimonialGrid}>
-    <div className={classes.testimonialItem}>
-      <img src={s1} alt="Person" className={classes.testimonialImage} />
-      <p className={classes.testimonialName}>Jack</p>
-      <p className={classes.testimonialComment}>"NN Engineers provided exceptional service. The quality of their work on our warehouse project was outstanding and completed on time."</p>
-    </div>
-    <div className={classes.testimonialItem}>
-      <img src={s2} alt="Person" className={classes.testimonialImage} />
-      <p className={classes.testimonialName}>Jane Smith</p>
-      <p className={classes.testimonialComment}>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-    </div>
-    <div className={classes.testimonialItem}>
-      <img src={s3} alt="Person" className={classes.testimonialImage} />
-      <p className={classes.testimonialName}>Alice Johnson</p>
-      <p className={classes.testimonialComment}>"The team at NN Engineers was professional and reliable. They handled our factory shed fabrication with great attention to detail."</p>
-    </div>
-    <div className={classes.testimonialItem}>
-      <img src={s4} alt="Person" className={classes.testimonialImage} />
-      <p className={classes.testimonialName}>Bob Brown</p>
-      <p className={classes.testimonialComment}>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
-    </div>
-  </div>
-</div>
 
-<InquiryForm />
+      <div className={classes.testimonials}>
+        <h2>Testimonials</h2>
+        <div className={classes.testimonialGrid}>
+          <div className={classes.testimonialItem}>
+            <img src={s1} alt="Person" className={classes.testimonialImage} />
+            <p className={classes.testimonialName}>Jack</p>
+            <p className={classes.testimonialComment}>"NN Engineers provided exceptional service. The quality of their work on our warehouse project was outstanding and completed on time."</p>
+          </div>
+          <div className={classes.testimonialItem}>
+            <img src={s2} alt="Person" className={classes.testimonialImage} />
+            <p className={classes.testimonialName}>Jane Smith</p>
+            <p className={classes.testimonialComment}>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+          </div>
+          <div className={classes.testimonialItem}>
+            <img src={s3} alt="Person" className={classes.testimonialImage} />
+            <p className={classes.testimonialName}>Alice Johnson</p>
+            <p className={classes.testimonialComment}>"The team at NN Engineers was professional and reliable. They handled our factory shed fabrication with great attention to detail."</p>
+          </div>
+          <div className={classes.testimonialItem}>
+            <img src={s4} alt="Person" className={classes.testimonialImage} />
+            <p className={classes.testimonialName}>Bob Brown</p>
+            <p className={classes.testimonialComment}>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+          </div>
+        </div>
+      </div>
+
+      <InquiryForm />
       <Footers />
     </div>
   );

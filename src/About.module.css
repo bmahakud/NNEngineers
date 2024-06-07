@@ -1,8 +1,13 @@
-/* About.module.css */
+
+
+body {
+  color: black;
+  overflow-x: hidden;
+  background-color: black; 
+}
 
 .companyProfile {
   width: 100%;
-  margin: 0 auto;
   font-family: Arial, sans-serif;
 }
 
@@ -29,11 +34,16 @@
   align-items: center;
   color: #fff;
   text-align: center;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .overlayText {
-  font-size: 3rem;
+  font-size: 5rem;
   margin: 0;
+  width: 100%;
+  text-align: left;
+  margin-left: 250px;
+  animation: slideInLeft 2s ease-in-out;
 }
 
 .overlaySubText {
@@ -43,29 +53,30 @@
 
 .aboutSection {
   padding: 20px;
-
+  animation: fadeIn 2s ease-in-out;
+  background-color: black;
 }
 
 .text {
-  max-width: 800px;
   margin: 0 auto;
+  text-align: left;
 }
 
 .text h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   margin-bottom: 10px;
   color: rgb(229, 220, 220);
 }
 
 .text p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
   color: rgb(143, 136, 136);
 }
 
 .icons {
-  width: 24px;
-  height: 24px;
+  width: 64px;
+  height: 64px;
   vertical-align: middle;
   margin-right: 8px;
 }
@@ -75,7 +86,7 @@
 }
 
 .visionSection h2, .missionSection h2, .valuesSection h2 {
-  font-size: 1.5rem;
+  font-size: 4rem;
   margin-bottom: 10px;
 }
 
@@ -86,12 +97,13 @@
 }
 
 .valuesSection li {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .block2 {
   margin: 20px 0;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .taglineSection {
@@ -102,23 +114,24 @@
   overflow: hidden;
   white-space: nowrap;
   height: 100vh;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .taglineTextContainer {
   max-width: 800px;
   margin-top: 250px;
   position: relative;
+  display: flex;
   align-items: center;
-
 }
 
 .scrollingText {
   display: inline-block;
-  animation: scroll-left 150s linear infinite;
+  animation: scroll-left 180s linear infinite; 
   white-space: nowrap;
   font-size: 10rem;
-  align-items: center;
 }
 
 @keyframes scroll-left {
@@ -127,6 +140,26 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -156,7 +189,52 @@
   }
 }
 
-@media (min-width: 150%){
+.block4 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: url('./dark.jpg') no-repeat center center/cover;
+}
+
+.block4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8));
+  z-index: 1;
+}
+
+.block4 .overlayText {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 14rem;
+  white-space: nowrap;
+  animation: scroll-left 40s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .block4 .overlayText {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 150%) {
+  .block4 .overlayText {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 150%) {
   .overlayText {
     font-size: 4.5rem;
   }
