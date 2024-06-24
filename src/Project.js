@@ -1,82 +1,94 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from 'react';
 import classes from './Project.module.css';
-import Header from './header'; 
-import Footers from './Footer';
-import a1 from './c.jpg';
-import a2 from './c1.jpg';
-import a3 from './c2.jpg';
-import a4 from './c3.jpg';
-import a5 from './c4.jpg';
-import a6 from './c5.jpg';
-import t1 from './a.jpg';
-import t2 from './a1.jpg';
-import t3 from './a3.jpeg';
-import t4 from './a4.jpeg';
-import t5 from './a5.jpeg';
-import t6 from './a6.jpeg';
-import t7 from './a7.jpeg';
+import completeProject1 from './c.jpg';
+import completeProject2 from './c1.jpg';
+import completeProject3 from './c2.jpg';
+import currentProject1 from './c3.jpg';
+import currentProject2 from './c4.jpg';
+import currentProject3 from './c5.jpg';
 
-const projects = [
-  { img: a1, desc: "Project 1: Renovation of downtown area, focusing on sustainability and modern architecture." },
-  { img: a2, desc: "Project 2: Construction of a new residential complex with green spaces and community amenities." },
-  { img: a3, desc: "Project 3: Development of a state-of-the-art office building with energy-efficient systems." },
-  { img: a4, desc: "Project 4: Expansion of a public park to include playgrounds, walking paths, and a small lake." },
-  { img: a5, desc: "Project 5: Retrofit of an old factory into a modern art gallery and creative workspace." },
-  { img: a6, desc: "Project 6: Design and construction of a high-tech sports facility with cutting-edge features." },
-];
-
-const teamImages = [t1, t2, t3, t4, t5, t6, t7];
-
-const ProjectCard = ({ img, desc, isLeft }) => (
-  <div className={`${classes.ProjectCard} ${isLeft ? classes.LeftImage : classes.RightImage}`}>
-    <img src={img} alt={desc} className={classes.ProjectImage} />
-    <p className={classes.Description}>{desc}</p>
-  </div>
-);
-
-const SlideShow = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); 
-
-    return () => clearInterval(interval);
-  }, [images.length]);
+const ProjectHeading = () => {
+  const [activeTab, setActiveTab] = useState('complete');
 
   return (
-    <div className={classes.SliderContainer}>
-      {images.map((img, index) => (
-        <div
-          key={index}
-          className={`${classes.Slide} ${index === currentIndex ? classes.ActiveSlide : ''}`}
-        >
-          <img src={img} alt={`Team ${index + 1}`} className={classes.SlideImage} />
+    <section className={classes.projectheading}>
+      <h2>Our Projects</h2>
+      <div className={classes.hero}>
+        <div className={classes.herotext}>
+          <h1>We Complete <span>Multiple Projects</span> in the Past</h1>
+          <div className={classes.stats}>
+            <div className={classes.statitem}>
+              <p>50+</p>
+              <small>Premium Product</small>
+            </div>
+            <div className={classes.statitem}>
+              <p>30+</p>
+              <small>Happy Customers</small>
+            </div>
+            <div className={classes.statitem}>
+              <p>4+</p>
+              <small>Awards Winning</small>
+            </div>
+          </div>
         </div>
-      ))}
-    </div>
+        <div className={classes.heroimage}>
+          <img src={currentProject1} alt="Building" />
+        </div>
+      </div>
+
+      <div className={classes.projectssection}>
+        <h2>Projects Gallery</h2>
+        <div className={classes.filtertabs}>
+          <span
+            className={activeTab === 'complete' ? classes.activetab : ''}
+            onClick={() => setActiveTab('complete')}
+          >
+            Complete Project
+          </span>
+          <span
+            className={activeTab === 'current' ? classes.activetab : ''}
+            onClick={() => setActiveTab('current')}
+          >
+            Current Project
+          </span>
+        </div>
+        <div className={classes.projectsgallery}>
+          {activeTab === 'complete' && (
+            <>
+              <div className={classes.projectcard}>
+                <img src={completeProject1} alt="Complete Project 1" />
+                <p className={classes.projectdescription}>Luxury Villa in the suburbs.</p>
+              </div>
+              <div className={classes.projectcard}>
+                <img src={completeProject2} alt="Complete Project 2" />
+                <p className={classes.projectdescription}>Modern apartment complex.</p>
+              </div>
+              <div className={classes.projectcard}>
+                <img src={completeProject3} alt="Complete Project 3" />
+                <p className={classes.projectdescription}>Eco-friendly residential community.</p>
+              </div>
+            </>
+          )}
+          {activeTab === 'current' && (
+            <>
+              <div className={classes.projectcard}>
+                <img src={currentProject1} alt="Current Project 1" />
+                <p className={classes.projectdescription}>High-rise office building under construction.</p>
+              </div>
+              <div className={classes.projectcard}>
+                <img src={currentProject2} alt="Current Project 2" />
+                <p className={classes.projectdescription}>Upcoming beachfront resort.</p>
+              </div>
+              <div className={classes.projectcard}>
+                <img src={currentProject3} alt="Current Project 3" />
+                <p className={classes.projectdescription}>New city park development.</p>
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+    </section>
   );
 };
 
-function App() {
-  return (
-    <div className={classes.Profile}>
-      <Header />
-      <h1 className={classes.Heading}>NN Engineers Team and Projects</h1>
-      
-      <SlideShow images={teamImages} />
-
-      <h2 className={classes.SubHeading}>Projects</h2>
-      <div className={classes.ProjectsContainer}>
-        {projects.map((project, index) => (
-          <ProjectCard key={index} img={project.img} desc={project.desc} isLeft={index % 2 === 0} />
-        ))}
-      </div>
-      
-      <Footers />
-    </div>
-  );
-}
-
-export default App;
+export default ProjectHeading;

@@ -22,9 +22,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
- 
   font-family: 'Roboto', sans-serif;
-  background: url('./contact.jpg') no-repeat center center/cover;
+  background: url('./futuristic.jpg') no-repeat center center/cover;
   color: #fff;
   animation: fadeIn 1s ease-in-out;
   height: 175vh;
@@ -49,7 +48,7 @@
   align-items: center;
   padding: 20px;
   margin: 15px;
-  border: 1px solid lightgray;
+  border: 2px solid lightgray;
   border-radius: 10px;
   background-color: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -89,7 +88,8 @@
   background-color: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: slideIn 1s ease-in-out;
-  border: 1px solid lightgray;  
+  border: 2px solid lightgray;  
+  
 
 }
 

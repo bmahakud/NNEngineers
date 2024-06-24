@@ -8,6 +8,7 @@ body {
   margin: 20px auto;
   color: white;
   padding: 20px;
+  margin-top: 120px;
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -44,7 +45,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto 20px;
-  animation: bounce 2s infinite;
+ 
 }
 
 .teammember h2 {

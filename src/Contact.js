@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import "./App.css";
 import './contact.jpg';
 
+
 function ContactPage() {
   
   const companyContact = {

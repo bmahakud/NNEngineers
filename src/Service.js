@@ -1,4 +1,3 @@
-// ServicesPage.js
 import React from 'react';
 import classes from './service.module.css';
 import Header from './header'; 

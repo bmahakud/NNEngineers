@@ -131,7 +131,7 @@ body {
   display: inline-block;
   animation: scroll-left 180s linear infinite; 
   white-space: nowrap;
-  font-size: 10rem;
+ 
 }
 
 @keyframes scroll-left {
@@ -217,7 +217,7 @@ body {
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 14rem;
+  font-size: 10rem;
   white-space: nowrap;
   animation: scroll-left 40s linear infinite;
 }

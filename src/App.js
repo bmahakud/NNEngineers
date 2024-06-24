@@ -1,3 +1,4 @@
+// App.js
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import classes from "./App.module.css";
@@ -7,7 +8,7 @@ import backgroundVideo from "./3D House Animation_1.mp4";
 import image1 from "./1.jpg";
 import image2 from "./2.jpg";
 import image3 from "./3.jpg";
-import image4 from "./4.jpg";
+import image4 from './4.jpg';
 import image6 from "./5.jpg";
 import image7 from './b6.jpeg';
 import p2 from "./p4.jpg";
@@ -24,29 +25,29 @@ import s10 from "./s10.png";
 import s11 from "./s11.png";
 import s12 from "./s12.png";
 import b4 from "./Safety First.png";
+import s13 from './S13.png'
 
 import a1 from './tata-removebg-preview.png';
 import a2 from './indianoil.png';
 import a3 from './Aditya-removebg-preview (copy).png';
 import a4 from './AMNS-removebg-preview.png'  ;
-import a5 from './imfa.jpg';
-import a6 from './mittal.png';
+import a5 from './imfa-removebg-preview.png';
+import a6 from './mittal-removebg-preview.png';
 import a7 from './igkc-removebg-preview (copy).png';
-import a8 from './jindal.png';
-import a9 from './jocke-wulcan-0Q7yLkGSHpA-unsplash.jpg';
+import a8 from './jindal-removebg-preview.png';
+
 import a10 from './bgu-removebg-preview.png';
 import a11 from './bimtech.jpeg';
 import a12 from './cpwd-removebg-preview.png';
 import a13 from './dion-removebg-preview.png';
-import a14 from './essar.png';
-import a15 from './gail-removebg-preview.png';
-import a16 from './gupta power.png';
-import a17 from './pwd.png';
-import a18 from './Sri.png';
-import a19 from './vedant.png';
+import a14 from './essar-removebg-preview.png';
+
+import a17 from './pwd-removebg-preview.png';
+import a18 from './Sri_Sri-removebg-preview.png';
+import a19 from './vedant-removebg-preview (1).png';
 
 const App = () => {
-  const images = [image1, image2, image3, image4, image6];
+  const images = [image1, image2, image3, image6];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const navigate = useNavigate();
@@ -81,15 +82,14 @@ const App = () => {
   };
 
   const clients = [
-    a1, a3,a4, a7,  a10, a12, 
+    a1,a2,  a3, a4, a5, a6, a7, a8,  a10, a11, a12,a13, a14, a17,a18
   ];
 
   return (
     <div className={classes.container}>
       <div className={classes.mainContent}>
         <div className={classes.FirstBlock}>
-          <div className={classes.text}>COMMITTED TO</div> 
-          <div className={classes.text1}># Excellence</div> 
+          <div className={classes.tag}>Building Tomorrow's Infrastructure Today</div>
           {images.map((image, index) => (
             <img
               key={index}
@@ -107,7 +107,6 @@ const App = () => {
         <div className={classes.secondBlock}>
           <video autoPlay muted loop className={classes.backgroundVideo}>
             <source src={backgroundVideo} type="video/mp4" />
-            Your browser does not support the video tag.
           </video>
           <div className={classes.overlay}></div>
           <div className={classes.block}>
@@ -122,7 +121,6 @@ const App = () => {
         </div>
         <div className={classes.thirdBlock}>
           <div className={classes.text2}>WE MAKE YOUR VISION A REALITY </div>
-          <img src={p2} alt="Third Block Image" className={classes.image} />
         </div>
 
         <div className={classes.fourthBlock}>
@@ -176,7 +174,7 @@ const App = () => {
                 <span>Storage Solutions</span>
               </div>
               <div className={classes.serviceItem}>
-                <img src={s8} alt="Icon" className={classes.icon} />
+                <img src={s13} alt="Icon" className={classes.icon} />
                 <span>Chemical Anchor Installation</span>
               </div>
               <div className={classes.serviceItem}>
@@ -189,17 +187,14 @@ const App = () => {
 
         <div className={classes.fifthBlock}>
           <h1>People</h1>
-          <p>
-            Health and safety take precedence over everything else— a belief we
-            uphold and an ecosystem we nurture at NN Engineers.
-          </p>
           <img src={b4} className={classes.image} alt="People Background" />
         </div>
-        <div className={`${classes.sixthBlock} ${classes.active}`}>
+
+        <div className={classes.sixthBlock}>
           <h1>Our Clients</h1>
           <div className={classes.clientImages}>
             {clients.map((client, index) => (
-              <img key={index} src={client} alt={`Client ${index + 1}`} className={classes.clientImage} style={{ '--index': index }} />
+              <img key={index} src={client} alt={`Client ${index + 1}`} className={classes.clientImage} />
             ))}
           </div>
         </div>
@@ -210,3 +205,4 @@ const App = () => {
 }
 
 export default App;
+
