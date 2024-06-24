@@ -1,7 +1,6 @@
 {
   "files": {
-<<<<<<< HEAD
-    "main.css": "/static/css/main.1ca56a01.css",
+    "main.css": "/static/css/main.0efa66a6.css",
     "main.js": "/static/js/main.05c98a30.js",
     "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
     "static/media/3D House Animation_1.mp4": "/static/media/3D House Animation_1.623b811f8f918f424de6.mp4",
@@ -18,31 +17,11 @@
     "static/media/5.jpg": "/static/media/5.ba770c02aa32f0f89fa3.jpg",
     "static/media/p4.jpg": "/static/media/p4.047695b26d8c69143776.jpg",
     "static/media/abc.jpg": "/static/media/abc.b5395407f6b82e6398c8.jpg",
-=======
-    "main.css": "/static/css/main.574b11cf.css",
-    "main.js": "/static/js/main.0b0a5f30.js",
-    "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
-    "static/media/3D House Animation_1.mp4": "/static/media/3D House Animation_1.623b811f8f918f424de6.mp4",
-    "static/media/5.jpg": "/static/media/5.9deca2443404c76ce28b.jpg",
-    "static/media/r9.jpg": "/static/media/r9.7ca6a77d5b3716bfceed.jpg",
-    "static/media/r12.jpg": "/static/media/r12.1de7eedd2551e8315782.jpg",
-    "static/media/city.jpg": "/static/media/city.483a3d740d354e6a3e67.jpg",
-    "static/media/dark.jpg": "/static/media/dark.82cf09148d3311695fda.jpg",
-    "static/media/dark0.jpg": "/static/media/dark0.e4d38f702b42d2e9cbdb.jpg",
-    "static/media/dusk.jpg": "/static/media/dusk.15eb5bf34e702994ed34.jpg",
-    "static/media/p4.jpg": "/static/media/p4.047695b26d8c69143776.jpg",
-    "static/media/abc.jpg": "/static/media/abc.b5395407f6b82e6398c8.jpg",
-    "static/media/3.jpg": "/static/media/3.53299f1362199a97bbdc.jpg",
->>>>>>> 1df84984302c1b8fe1b1d746b7c7b825bb63153b
     "static/media/r1.jpg": "/static/media/r1.c20775f001006a79710d.jpg",
     "static/media/r8.jpg": "/static/media/r8.890744b56c18f0901783.jpg",
     "static/media/ppl1.jpg": "/static/media/ppl1.07309e8df10734aba012.jpg",
-    "static/media/4.jpg": "/static/media/4.a46174df4bd539dacd82.jpg",
     "static/media/r6.jpg": "/static/media/r6.cbf25b51ca03d8f82daf.jpg",
-<<<<<<< HEAD
     "static/media/city.jpg": "/static/media/city.08230216d76d2488f178.jpg",
-=======
->>>>>>> 1df84984302c1b8fe1b1d746b7c7b825bb63153b
     "static/media/r7.jpg": "/static/media/r7.81ac7c61bb4f69f635cc.jpg",
     "static/media/r.jpg": "/static/media/r.f226e86b0023c0ed5459.jpg",
     "static/media/r13.jpg": "/static/media/r13.dc910ab8d606887e42d1.jpg",
@@ -53,52 +32,29 @@
     "static/media/ppl2.jpg": "/static/media/ppl2.d68301a131837c30edf5.jpg",
     "static/media/2.jpg": "/static/media/2.cf0634b7491767a0f5c4.jpg",
     "static/media/r5.jpg": "/static/media/r5.3ed022baba334ef8a88c.jpg",
-<<<<<<< HEAD
-=======
-    "static/media/jocke-wulcan-0Q7yLkGSHpA-unsplash.jpg": "/static/media/jocke-wulcan-0Q7yLkGSHpA-unsplash.1e3d0ad662ed2198f8ef.jpg",
->>>>>>> 1df84984302c1b8fe1b1d746b7c7b825bb63153b
     "static/media/r10.jpg": "/static/media/r10.c183ee313456035b4f4b.jpg",
     "static/media/c3.jpg": "/static/media/c3.325c669b0eddb504eb55.jpg",
     "static/media/ppl.jpg": "/static/media/ppl.30dc92884cd1375c0948.jpg",
     "static/media/c4.jpg": "/static/media/c4.f84d802eea6e01130a10.jpg",
     "static/media/ppl3.jpg": "/static/media/ppl3.5ecca9cc28f68b5bb7d4.jpg",
     "static/media/r11.jpg": "/static/media/r11.cabaa7887d70edf177f2.jpg",
-<<<<<<< HEAD
     "static/media/c1.jpg": "/static/media/c1.9b9f197c642f91b17498.jpg",
     "static/media/c2.jpg": "/static/media/c2.9b9f197c642f91b17498.jpg",
-=======
-    "static/media/1.jpg": "/static/media/1.b07ff618139e3e5ad060.jpg",
-    "static/media/a1.jpg": "/static/media/a1.6d3b30a8c7e111f86fa4.jpg",
-    "static/media/c1.jpg": "/static/media/c1.9b9f197c642f91b17498.jpg",
-    "static/media/c2.jpg": "/static/media/c2.9b9f197c642f91b17498.jpg",
-    "static/media/a.jpg": "/static/media/a.5723fa754352649a8aab.jpg",
->>>>>>> 1df84984302c1b8fe1b1d746b7c7b825bb63153b
     "static/media/ppl2.png": "/static/media/ppl2.5f62b19dc9f783442fb7.png",
-    "static/media/a3.jpeg": "/static/media/a3.5860b640bd0c406eb226.jpeg",
     "static/media/ppl1.png": "/static/media/ppl1.c3493109c451004f9a5f.png",
     "static/media/ppl4.jpg": "/static/media/ppl4.9f05f740072f94c25f17.jpg",
-    "static/media/a4.jpeg": "/static/media/a4.bf18557bd9b2ae4cf245.jpeg",
     "static/media/ppl.jpeg": "/static/media/ppl.317657633eb3166cb4c0.jpeg",
     "static/media/ppl.png": "/static/media/ppl.3a62604251384f2ed846.png",
-<<<<<<< HEAD
-=======
-    "static/media/a5.jpeg": "/static/media/a5.61387e7500db2a970209.jpeg",
->>>>>>> 1df84984302c1b8fe1b1d746b7c7b825bb63153b
     "static/media/b6.jpeg": "/static/media/b6.6a7bbf790438cb51c07a.jpeg",
     "static/media/Safety First.png": "/static/media/Safety First.f323c821574bf236d4ad.png",
     "static/media/NN.png": "/static/media/NN.c32df0d76afbf9122f18.png",
     "static/media/igkc-removebg-preview (copy).png": "/static/media/igkc-removebg-preview (copy).a6c822a55c67d0615ef7.png",
     "static/media/ppl1.jpeg": "/static/media/ppl1.f06dc61f28f5ac436c30.jpeg",
-<<<<<<< HEAD
-=======
-    "static/media/a7.jpeg": "/static/media/a7.68fc7b82bc7f0339a317.jpeg",
->>>>>>> 1df84984302c1b8fe1b1d746b7c7b825bb63153b
     "static/media/r14.jpg": "/static/media/r14.ebec9bf90d1c3d3236a7.jpg",
     "static/media/AMNS-removebg-preview.png": "/static/media/AMNS-removebg-preview.424684719a7341e65822.png",
     "static/media/logo.png": "/static/media/logo.b6e7c4a7b6057b05e454.png",
     "static/media/bgu-removebg-preview.png": "/static/media/bgu-removebg-preview.f97d07c87c789b99694b.png",
     "static/media/r4.jpg": "/static/media/r4.caa9217280fafa48a7e0.jpg",
-<<<<<<< HEAD
     "static/media/imfa-removebg-preview.png": "/static/media/imfa-removebg-preview.883e46e41e9037ea2377.png",
     "static/media/mittal-removebg-preview.png": "/static/media/mittal-removebg-preview.5e228b10c9b1269f2a52.png",
     "static/media/Aditya-removebg-preview (copy).png": "/static/media/Aditya-removebg-preview (copy).9f8671d3c8577f0e3aa1.png",
@@ -113,38 +69,12 @@
     "static/media/dion-removebg-preview.png": "/static/media/dion-removebg-preview.abd123361a50e4876a5a.png",
     "static/media/search1.png": "/static/media/search1.47b51df35babb65c4f47.png",
     "index.html": "/index.html",
-    "main.1ca56a01.css.map": "/static/css/main.1ca56a01.css.map",
+    "main.0efa66a6.css.map": "/static/css/main.0efa66a6.css.map",
     "main.05c98a30.js.map": "/static/js/main.05c98a30.js.map",
     "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ca56a01.css",
+    "static/css/main.0efa66a6.css",
     "static/js/main.05c98a30.js"
-=======
-    "static/media/gail-removebg-preview.png": "/static/media/gail-removebg-preview.0c2f77f475844f8eeb5d.png",
-    "static/media/a6.jpeg": "/static/media/a6.d3533d6c89a381dfc1d4.jpeg",
-    "static/media/Aditya-removebg-preview (copy).png": "/static/media/Aditya-removebg-preview (copy).9f8671d3c8577f0e3aa1.png",
-    "static/media/tata-removebg-preview.png": "/static/media/tata-removebg-preview.7d4eb98b528126c401e6.png",
-    "static/media/vedant.png": "/static/media/vedant.37e2a5d6048ca6769d08.png",
-    "static/media/cpwd-removebg-preview.png": "/static/media/cpwd-removebg-preview.c2d2c66c63ca72b16a54.png",
-    "static/media/gupta power.png": "/static/media/gupta power.ae27aee6e944e32bd861.png",
-    "static/media/r2.jpg": "/static/media/r2.c1cda88e68f5d30d9590.jpg",
-    "static/media/Sri.png": "/static/media/Sri.e1375e1c3238de39e5d5.png",
-    "static/media/imfa.jpg": "/static/media/imfa.7ce1ed77d59199d36cce.jpg",
-    "static/media/dion-removebg-preview.png": "/static/media/dion-removebg-preview.abd123361a50e4876a5a.png",
-    "static/media/jindal.png": "/static/media/jindal.0fd0f33981f1f9cd26fb.png",
-    "static/media/pwd.png": "/static/media/pwd.7e9a8837399a1ca807e1.png",
-    "static/media/mittal.png": "/static/media/mittal.b02ae003ff159f809ae6.png",
-    "static/media/essar.png": "/static/media/essar.62003340699799466869.png",
-    "static/media/search1.png": "/static/media/search1.47b51df35babb65c4f47.png",
-    "index.html": "/index.html",
-    "main.574b11cf.css.map": "/static/css/main.574b11cf.css.map",
-    "main.0b0a5f30.js.map": "/static/js/main.0b0a5f30.js.map",
-    "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.574b11cf.css",
-    "static/js/main.0b0a5f30.js"
->>>>>>> 1df84984302c1b8fe1b1d746b7c7b825bb63153b
   ]
 }
