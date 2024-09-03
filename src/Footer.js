@@ -85,16 +85,16 @@ function Footer() {
           <p>Mission</p>
         </div>
         <div className={classes.footerSection}>
-          <h2>PORTFOLIO</h2>
+          {/* <h2>PORTFOLIO</h2>
           <p>Applications</p>
-          <p>Projects</p>
+          <p>Projects</p> */}
           <p>Pre Engineered Building</p>
         </div>
         <div className={classes.footerSection}>
           <h2>PEOPLE</h2>
           <p>Team</p>
-          <p>Vision</p>
-          <p>Careers</p>
+          {/* <p>Vision</p>
+          <p>Careers</p> */}
         </div>
         <div className={classes.footerSection}>
           <h2>SOCIETY</h2>

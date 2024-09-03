@@ -1,3 +1,5 @@
+/* Base Styles */
+
 .header {
   position: absolute;
   top: 0;
@@ -8,7 +10,6 @@
   align-items: center;
   padding: 20px; 
   box-sizing: border-box;
-  
   z-index: 1000;
 }
 
@@ -43,4 +44,28 @@
 .logo {
   width: 300px; 
   height: auto;
+}
+
+
+@media (max-width: 400px) {
+  .header {
+    padding: 10px; 
+  }
+
+  .menuIcon,
+  .searchIcon {
+    width: 30px; 
+    height: 30px;
+    margin-right: 5px; 
+  }
+
+  .logo {
+    width: 150px; 
+    height: auto;
+  }
+
+  .iconsContainer {
+    flex-direction:row; 
+    align-items: flex-start; 
+  }
 }

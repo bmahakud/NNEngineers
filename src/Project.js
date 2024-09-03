@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import classes from './Project.module.css';
-import completeProject1 from './c.jpg';
-import completeProject2 from './c1.jpg';
-import completeProject3 from './c2.jpg';
-import currentProject1 from './c3.jpg';
-import currentProject2 from './c4.jpg';
-import currentProject3 from './c5.jpg';
+import pic from './c.jpg';
+import completeProject1 from './c4.jpg';
+import completeProject2 from './c5.jpeg';
+import completeProject3 from './c6.jpeg';
+import  completeProject4 from './c7.jpeg'; 
+import currentProject1 from './c1.jpeg';
+import currentProject2 from './c2.jpeg';
+import currentProject3 from './c3.jpeg';
+import currentProject4 from './c8.jpeg';
 
 const ProjectHeading = () => {
   const [activeTab, setActiveTab] = useState('complete');
@@ -32,7 +35,7 @@ const ProjectHeading = () => {
           </div>
         </div>
         <div className={classes.heroimage}>
-          <img src={currentProject1} alt="Building" />
+          <img src={pic}/>
         </div>
       </div>
 
@@ -67,6 +70,10 @@ const ProjectHeading = () => {
                 <img src={completeProject3} alt="Complete Project 3" />
                 <p className={classes.projectdescription}>Eco-friendly residential community.</p>
               </div>
+              <div className={classes.projectcard}>
+                <img src={completeProject4} alt="Complete Project 3" />
+                <p className={classes.projectdescription}>Eco-friendly residential community.</p>
+              </div>
             </>
           )}
           {activeTab === 'current' && (
@@ -81,6 +88,10 @@ const ProjectHeading = () => {
               </div>
               <div className={classes.projectcard}>
                 <img src={currentProject3} alt="Current Project 3" />
+                <p className={classes.projectdescription}>New city park development.</p>
+              </div>
+              <div className={classes.projectcard}>
+                <img src={currentProject4} alt="Current Project 3" />
                 <p className={classes.projectdescription}>New city park development.</p>
               </div>
             </>

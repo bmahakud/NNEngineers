@@ -1,5 +1,4 @@
 .footer {
-   
   bottom: 0;
   width: 100%;
   background-color: black; 
@@ -9,17 +8,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  padding: 20px; /* Reduced padding for smaller screens */
 }
 
 .footerIcons {
   display: flex;
-  gap: 30px;
+  gap: 15px; /* Reduced gap for smaller screens */
 }
 
 .iconButton:hover {
-  transform: scale(1.2); 
+  transform: scale(1.1); /* Slightly reduced scale for smaller screens */
 }
+
 .iconButton {
   background: none;
   border: none;
@@ -28,15 +28,15 @@
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
+  width: 40px; /* Reduced size for smaller screens */
+  height: 40px; /* Reduced size for smaller screens */
 }
 
 .newsletter {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-right: 10px;
+  gap: 5px; /* Reduced gap for smaller screens */
+  margin-right: 5px; /* Reduced margin for smaller screens */
 }
 
 .emailSubscription {
@@ -46,9 +46,9 @@
 }
 
 .emailLabel {
-  font-size: 16px;
+  font-size: 14px; /* Reduced font size for smaller screens */
   color: grey;
-  margin-right: 10px;
+  margin-right: 5px; /* Reduced margin for smaller screens */
   margin-top: 5px;
 }
 
@@ -58,11 +58,12 @@
   background: transparent;
   color: #fff;
   outline: none;
-  padding: 10px;
+  padding: 5px; /* Reduced padding for smaller screens */
 }
+
 .emailInput::placeholder {
   color: #fff;
-  font-size: 20px;
+  font-size: 16px; /* Reduced font size for placeholder */
 }
 
 .subscribeButton {
@@ -73,7 +74,7 @@
 
 .blinkingArrow {
   animation: blink 1s infinite;
-  width: 25px;
+  width: 20px; /* Reduced size for smaller screens */
 }
 
 @keyframes blink {
@@ -87,31 +88,29 @@
 
 .errorMessage {
   color: red;
-  font-size: 14px;
-  margin-left: 10px;
+  font-size: 12px; 
+  margin-left: 5px; 
 }
 
 .thankYouMessage {
-  font-size: 16px;
-  color: #0f0;
+  font-size: 14px; 
 }
 
 .footerSections {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px; 
   flex-wrap: wrap;
 }
 
 .footerSection {
   flex: 1;
-  min-width: 200px;
-  margin-right: 10px;
-  padding: 20px;
+  min-width: 150px; 
+  margin-right: 5px;
 }
 
 .footerSection h2 {
-  font-size: 18px;
+  font-size: 16px; 
   margin-bottom: 10px;
   color: rgb(67, 66, 66);
   text-align: left;
@@ -120,27 +119,27 @@
 .footerSection p {
   margin: 5px 0;
   text-align: left;
-  line-height: 2.5;
+  line-height: 1.5; 
   color: grey;
-  font-size: 1.1em;
+  font-size: 0.9em; 
 }
 
 .footerBottom {
   text-align: center;
-  padding: 20px;
+  padding: 10px; 
   color: white;
 }
 
 .footerBottom1 {
   text-align: center;
-  padding: 20px;
+  padding: 10px; 
   color: rgb(72, 70, 70);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .footerTop {
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; 
   }
 
   .footerSections {

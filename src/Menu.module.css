@@ -1,85 +1,79 @@
+/* Base Styles */
+
 body {
   background-color: black;
   border: none;
-
 }
 
-
 .pageContainer {
-    background-color: rgb(0, 0, 0);
-    height: 100vh;
-    width: 100%;
-    position: static;
-    z-index: 1000;
-    color: white; 
-   
-  }
-  
-  .menuContainer {
-    display: grid;
-    margin-top: 0%;
-    justify-content: space-between; 
-    color: rgb(237, 229, 229);
-    flex: 1;
-    background-color: rgb(0, 0, 0);
-    padding: 40px;
-    margin-top: 100px;
-  
-  }
-
-  
-  .menuItems {
-    list-style-type: none;
-  }
-  
- .text{
-  
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  width: 100%;
+  position: static;
+  z-index: 1000;
   color: white;
- }
+}
 
- 
-  .logo {
-    height: 200px;
-    width: 500px;
-    margin-left: 60px;
-  }
-  
-  .number {
-    font-size: 20px;
-    margin-right: 10px;
-    margin-bottom: 40px;
-    color: white;
-  }
-  
-  .menuItems li {
-    font-size: 80px;
-    display: flex;
-    align-items: center;
-  }
-  
-  ul {
-    font-size: 20px;
-  }
-  
+.menuContainer {
+  display: grid;
+  margin-top: 100px;
+  justify-content: space-between;
+  color: rgb(237, 229, 229);
+  flex: 1;
+  background-color: rgb(0, 0, 0);
+  padding: 40px;
+}
 
-  .head{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    align-items: center;
-  }
-  
-  .closebutton{
-    width: 100%;
-    background-color: black;
-    padding: 10px;
-    display: flex;
-    justify-content: end;
-    border: none;
-    margin-top: 100px;
-  }
+.menuItems {
+  list-style-type: none;
+  padding-left: 0; /* Ensures alignment starts from the left */
+}
 
-.closeLink{
+.text {
+  color: white;
+}
+
+.logo {
+  height: 200px;
+  width: 500px;
+  margin-left: 60px;
+}
+
+.number {
+  font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.menuItems li {
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  font-size: 20px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.closebutton {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  border: none;
+  margin-top: 100px;
+}
+
+.closeLink {
   border: 1px solid grey;
   padding: 10px;
   border-radius: 5px;
@@ -88,48 +82,115 @@ body {
   margin-top: 5px;
 }
 
-
 .icon {
-    width: 100px;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  align-items: right;
+}
+
+.additionalSections {
+  display: flex;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: end;
+  margin-right: 40px;
+  background-color: black;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  margin-right: 50px;
+}
+
+.sectionText h2:hover {
+  color: #852007;
+}
+
+.text:hover {
+  color: #852007;
+}
+
+.socialIcon:hover {
+  transform: rotate(45deg);
+}
+
+
+@media (max-width: 400px) {
+  .pageContainer {
+    height: auto;
+    padding: 20px;
+  }
+
+  .menuContainer {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .logo {
     height: 100px;
-    margin-right: 10px;
-    align-items: right;
+    width: 250px;
+    margin-left: 20px;
   }
-  
-  .additionalSections {
-    display: flex;
-    
-  
+
+  .menuItems {
+    padding-left: 10px; 
   }
-  
- 
-  .socialIcons {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: end;
-    margin-right: 40px;
-    background-color: black;
-    width: 100%;
+
+  .menuItems li {
+    font-size: 40px; 
+    flex-direction: column; 
     margin-bottom: 20px;
-   
+    align-items: flex-start; 
   }
-  
+
+  .head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .closebutton {
+    margin-top: 20px;
+  }
+
+  .closeLink {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .socialIcons {
+    flex-direction: row; 
+    justify-content: flex-start; 
+    margin-right: 0;
+    gap: 10px;
+    width: 100%; 
+    padding-left: 10px;
+  }
+
   .socialIcon {
-    width: 40px;
-    height: 40px;
-    margin-right: 50px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; 
   }
-  
-  
-  .sectionText h2:hover {
-    color: #852007; 
+
+  .number {
+    font-size: 16px;
+    margin-bottom: 20px;
   }
-  
-  .text:hover{
-    color: #852007;  
+
+  .additionalSections {
+    flex-direction: column;
   }
-  .socialIcon:hover {
-    transform: rotate(45deg);
-  }
-  
+}

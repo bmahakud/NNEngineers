@@ -14,6 +14,7 @@ import Layout from './Layout';
 import Project from './Project';
 import Footer from './Footer';
 import Contact from './Contact';
+import FirstBlock from './WebSite/Home/FirstBlock';
 // import App from './Vision.module';
 // import App from './society.module'
 

@@ -1,87 +1,62 @@
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-}
 
 .App {
-  text-align: center;
-  width: 100%;
+  font-family: Arial, sans-serif;
+  color: #333;
   overflow-x: hidden;
 }
 
-
 .Appheader {
-  background-color: #020202;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  width: 100%;
-  overflow: hidden;
-}
-
-.slideshow {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.slideshowimage {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: opacity 1s ease-in-out;
-  object-fit: cover;
-}
-
-.overlayText {
-  position: absolute;
-  top: 45%;
-  right: 5%;
-  transform: translateY(-50%);
-  z-index: 1;
-  color: rgb(201, 25, 25);
-  font-size: 1.5em;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-@media (max-width: 600px) {
-  .overlayText {
-    font-size: 1em;
-    padding: 5px;
-    right: 2%;
-  }
-}
-
-.videoSection {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
-.backgroundVideo {
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slideshowimage {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.overlayText {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  transform: translateY(50%);
+  color: var(--themeColor);
+  font-size: 3rem; /* Adjust as needed */
+  font-weight: bold;
+  text-align: right; /* Aligns text to the right edge */
+  width: auto; /* Adjust width as needed */
+  padding: 20px; /* Add padding if needed */
+}
+
+.videoSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.backgroundVideo {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
-  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .videoOverlayText {
@@ -89,17 +64,16 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
   color: white;
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  z-index: 1;
 }
 
 .knowMoreButton {
@@ -115,9 +89,8 @@ html, body {
 }
 
 .knowMoreButton:hover {
-  background-color: rgb(255, 50, 50);
+  background-color: var(--themeColor);
 }
-
 
 .imageSection {
   position: relative;
@@ -126,36 +99,34 @@ html, body {
   background: url('./dark0.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .imageOverlayText {
   position: absolute;
   top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
-  z-index: 1;
+  left: 60%;
+  transform: translate(-50%, -50%);
   color: rgb(167, 162, 162);
   font-size: 3em;
   font-weight: bold;
   text-align: center;
   padding: 20px;
   border-radius: 5px;
- 
 }
-
 
 .fourthBlock {
   background: url('./futuristic-moon-background (1).jpg') no-repeat center center/cover;
-  padding: 40px 20px;
+  padding: 0;
+  margin: 0;
   width: 100%;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .fourthBlock h1 {
@@ -180,10 +151,6 @@ html, body {
   gap: 20px;
 }
 
-.serviceItem span {
-  color: #d6d1d1;
-}
-
 .serviceItem {
   padding: 20px;
   border-radius: 10px;
@@ -199,10 +166,12 @@ html, body {
   overflow: hidden;
   max-width: 100%;
   text-align: center;
+  color: white;
 }
 
 .serviceItem:hover {
   background-color: var(--themeColor);
+  color: #d6d1d1;
 }
 
 .icon {
@@ -211,79 +180,18 @@ html, body {
   display: block;
 }
 
-@media (max-width: 600px) {
-  .serviceList {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .serviceColumn {
-    width: 100%;
-  }
-
-  .serviceItem {
-    width: 90%;
-    height: auto;
-  }
-}
-
 .fifthBlock {
-  position: relative;
   width: 100%;
+  background: url('./Safety First .png') no-repeat center center / cover;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: url(./Safety\ First.png) no-repeat center center;
-  background-size: cover;
+  align-items: center;
+  overflow: hidden;
 }
-
-.safetyOverlayText {
-  position: absolute;
-  top: 60%;
-  left: 24%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  color: black;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 20px;
-  border-radius: 5px;
-  max-width: 80%;
-}
-
-@media (max-width: 992px) {
-  .safetyOverlayText {
-    font-size: 1.75rem;
-    padding: 15px;
-    max-width: 90%;
-    margin-left: 100px;
-  }
-}
-
-@media (max-width: 768px) {
-  .safetyOverlayText {
-    font-size: 1.5rem;
-    padding: 10px;
-    max-width: 95%;
-    margin-left: 100px;
-  }
-}
-
-@media (max-width: 576px) {
-  .safetyOverlayText {
-    font-size: 1.25rem;
-    padding: 5px;
-    max-width: 100%;
-    margin-left: 100px;
-  }
-}
-
 
 .sixthBlock {
   text-align: center;
-  height: auto;
   min-height: 100vh;
   background-image: url(./theme.jpg);
   background-size: cover;
@@ -294,22 +202,21 @@ html, body {
   overflow: hidden;
   color: rgb(130, 121, 121);
   font-size: 2rem;
-  padding: 2rem 2rem;
+  padding: 0;
   width: 100%;
 }
 
 .clientImages {
   display: grid;
-  grid-template-rows: repeat(5, 1fr); 
+  grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: max-content;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
- 
 }
 
 .clientImage {
@@ -322,39 +229,66 @@ html, body {
 }
 
 .clientImage img {
-  width: 100%;
+  width: 80%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
 
-@media (max-width: 1200px) {
-  .clientImages {
-    gap: 0.75rem;
-  }
+.imageOverlayText{
+  display: flex;
+  justify-content: left;
 }
 
-@media (max-width: 992px) {
-  .clientImages {
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 0.5rem;
+@media (max-width: 600px) {
+  .videoOverlayText, .imageOverlayText, .overlayText {
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 90%;
   }
-}
 
-@media (max-width: 768px) {
-  .clientImages {
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 0.5rem;
+.Appheader{
+  width: 100%;
+  overflow: hidden;
+}
+  .fourthBlock h1{
+    margin-top: 20px;
+    font-size: 2rem;
+    padding: 5px;
   }
-}
+  .serviceItem {
+    width: 200px;
+    height: 130px;
+  }
 
-@media (max-width: 576px) {
   .clientImages {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 0.25rem;
   }
 
   .clientImage {
-    padding: 0.25rem;
+   
+  }
+
+  .clientImage img {
+    width: 100%;
+    max-width: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .videoOverlayText, .imageOverlayText, .overlayText {
+    font-size: 1rem;
+    padding: 2px;
+  }
+
+  .serviceItem {
+    width: 180px;
+    height: 120px;
+  }
+
+  .knowMoreButton {
+    font-size: 0.8rem;
+    padding: 8px 16px;
   }
 }

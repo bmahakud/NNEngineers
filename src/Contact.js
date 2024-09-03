@@ -8,9 +8,9 @@ import './contact.jpg';
 function ContactPage() {
   
   const companyContact = {
-    email: "contact@company.com",
-    phone: "123-456-7890",
-    address: "123 Main Street, Cityville",
+    email: "Info@nnengineers.co.in",
+    phone: "9040172999",
+    address: "Kalinga Vihar, Bhubaneswar, Pin-751030, Odisha",
   };
 
   return (

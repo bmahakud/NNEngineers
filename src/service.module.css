@@ -56,20 +56,19 @@ left: 29%;
 
 .serviceItem {
   text-align: center;
-  width: 340px;
+  width: 400px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: #fff;
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-  height: 340px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
   border: 1px solid lightgray;
-  animation: zoomIn 1s ease-in;
+  
 }
 
 .serviceItem:hover {

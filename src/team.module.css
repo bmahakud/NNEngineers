@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: rgb(37, 36, 36);
   margin: 0;
 }
@@ -97,4 +97,32 @@ body {
   60% {
     transform: translateY(-15px);
   }
+} */
+body {
+  background-color: rgb(37, 36, 36);
+  margin: 0;
+}
+
+.teamSection {
+  background-image: url('./team.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamOverlay {
+ 
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.teamOverlay h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
 }
